@@ -1,0 +1,117 @@
+:root {
+   --back-color: #fff0f5;
+   --contenedor: #f8e1e7;
+   --boton:#d6336c;
+   --boton-hover: #a60034;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--back-color);
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+    
+}
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: var(--contenedor);
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+.contenedor p {
+    margin: 20px 10px;
+    margin-bottom: 10px !important;
+    font-size: 18px;
+    color:var(--boton);
+}
+.contenedor .botones {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+}
+button {
+    margin: 10px 10px;
+    margin-top: 5px !important;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--boton);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: var(--boton-hover);
+}
+@media (max-width: 480px) {
+    .contenedor {
+        width: 80%;
+        height: auto;
+        padding: 10px;
+    }
+    .contenedor p {
+        font-size: 16px;
+    }
+    button {
+        font-size: 14px;
+    }
+}
+/* Confetti container covering the entire screen */
+#confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 10;
+    overflow: hidden; /* Prevent elements from spilling */
+}
+
+/* Confetti pieces */
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    opacity: 0.8;
+    pointer-events: none;
+    animation: fall 2s linear forwards;
+    box-sizing: content-box; /* Ensure padding doesn't interfere with size */
+}
+
+/* Override different shapes and sizes */
+.confetti.small { width: 6px; height: 6px; }
+.confetti.medium { width: 12px; height: 12px; }
+.confetti.large { width: 16px; height: 16px; }
+.confetti.circle { border-radius: 50%; }
+
+/* Falling animation */
+@keyframes fall {
+    0% {
+        transform: translateY(-20vh) rotate(0deg); /* Start well above the screen */
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(50vh) rotate(15deg); /* Swing downwards */
+    }
+    75% {
+        transform: translateY(75vh) rotate(-15deg); /* Another swing */
+    }
+    100% {
+        transform: translateY(100vh) rotate(0deg); /* Fall off-screen */
+        opacity: 0;
+    }
+}
