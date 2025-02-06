@@ -12,3 +12,7 @@ Consiste en una invitación en la que se tiene que confirmar con "Sí" o "No" si
 
 **Almacenamiento:** Indexed DB
 
+
+
+(en proceso)
+
