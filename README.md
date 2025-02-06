@@ -14,5 +14,5 @@ Consiste en una invitación en la que se tiene que confirmar con "Sí" o "No" si
 
 
 
-(en proceso)
+(Página en construcción...)
 
