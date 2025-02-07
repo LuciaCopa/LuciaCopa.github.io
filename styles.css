@@ -14,7 +14,15 @@ body, html {
     background-color: var(--back-color);
     font-family: Arial, sans-serif;
     flex-direction: column;
-    
+}
+.arriba{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(#fff0f5, #fff0f5fa, #fff0f5ac,#fff0f564,#fff0f545, #fff0f500 );
+    z-index:20;
 }
 .contenedor {
     display: flex;
