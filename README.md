@@ -3,7 +3,7 @@
 
 Se trata de un pequeño detalle para regalar por San Valentín. 
 
-Consiste en una invitación en la que se tiene que aceptar con pulsando en "Sí" o "No", pero ojo, tiene un truco para que la otra persona no pueda negarse...
+Consiste en una invitación que tiene que ser aceptada pulsando en "Sí" o en "No", pero ojo, tiene un truco para que la otra persona no pueda negarse...
 
 
 ## Tech Stack
